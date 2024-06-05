@@ -1,0 +1,351 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .mandatory::after {
+      content: "*";
+      color: red;
+    }
+
+    .mandatory {
+      display: flex;
+    }
+
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid seagreen;
+      border-radius: 4px;
+
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .input-wrapper {
+      display: flex;
+      gap: 12px;
+    }
+
+    .input-wrapper label {
+      width: 100%;
+    }
+
+    .input-wrapper input {
+      width: 100%;
+    }
+
+    form {
+      width: 800px;
+    }
+
+    .query-wrapper label {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      align-items: center;
+      border: 2px solid seagreen;
+      margin: 8px 0;
+      padding: 12px 20px;
+      border-radius: 4px;
+    }
+
+    .query-wrapper p {
+      width: 90%;
+    }
+
+    .query-wrapper input {
+      width: 20px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <h2>Contact Form</h2>
+
+  <form action="/action_page.php" target="_self" method="get">
+    <!-- Name -->
+<!-- <div class="input-wrapper">
+      <label>
+        <span class="mandatory">
+          First Name: <br />
+        </span>
+        <input type="text" name="fname" required><br>
+      </label>
+      <label>
+        <span class="mandatory">
+          Last Name: <br />
+        </span>
+        
+        <input type="text" name="fname" required><br>
+      </label>
+    </div>
+    <!-- Name -->
+
+<!-- <label>
+      <span class ="mandatory">
+        Email: <br />
+      </span>
+      <input type="text"  name="email" required><br>
+    </label>
+
+
+    <!-- Query Type -->
+<!-- <label>
+      Query Type:<br />
+      <div class="input-wrapper query-wrapper">
+        <label for="ge">
+          <p>
+            General Enquiry
+          </p>
+          <input type="radio" id="ge" name="querry_type" value="General Enquiry" required>
+        </label>
+        <label for="sr">
+          <p>
+            Support Request<br />
+          </p>
+          <input type="radio" id="sr" name="querry_type" value="Support Request" required>
+        </label>
+      </div>
+    </label>
+    <!-- Query Type -->
+
+<!-- <label for="Message" class="mandatory">Message:</label><br>
+    <input type="text" id="Message" name="Message" required><br>
+    <input type="checkbox" id="consent" name="consent" value="consent" required>
+    <!--how to use id name and values here?-->
+<!-- <label for="consent" class="mandatory">I consent to being contacted by the team</label><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>  <!--Declares the document type and version of HTML (HTML5 in this case).-->
+<html lang="en"> <!--Starts the HTML document and sets the language attribute to English.-->
+
+<head> <!--Contains metadata and links to external resources like CSS and JavaScript files.-->
+  <meta charset="UTF-8"> <!--Sets the character encoding to UTF-8.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Ensures the page is responsive and sets the width to the device's width.-->
+  <title>Contact Us</title> <!--Sets the title of the web page, displayed on the browser tab.-->
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /*  Sets the height to 100% of the viewport height */
+      margin: 0;
+      background-color: #E9F5F2;
+      /* Light green background color */
+    }
+
+    .mandatory::after {
+      content: "*";
+      color: red;
+    }
+
+    .mandatory {
+      display: flex;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #D1D1D1;
+      /* Light gray border */
+      border-radius: 4px;
+      transition: border-color 0.3s;
+    }
+
+    input[type=submit] {
+      background-color: #008D68;
+      /* Green button color */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    input[type=submit]:hover {
+      background-color: #006f52;
+    }
+
+    input[type=text]:hover,
+    input[type=email]:hover,
+    textarea:hover {
+      border-color: #008D68;
+    }
+
+    input[type=radio] {
+      margin-right: 10px;
+    }
+
+    .input-wrapper {
+      display: flex;
+      gap: 12px;
+    }
+
+    .input-wrapper label {
+      width: 100%;
+    }
+
+    .input-wrapper input {
+      width: 100%;
+    }
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      /* Adjust form width */
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .query-wrapper {
+      display: flex;
+      margin: 8px 0;
+    }
+
+    .query-wrapper label {
+      display: flex;
+      align-items: center;
+    }
+
+    .query-wrapper p {
+      margin: 0;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .consent-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+    }
+
+    .consent-wrapper input[type=checkbox] {
+      width: auto;
+    }
+
+    .success-message {
+      display: none;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #004d40;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .success-message.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="success-message" id="successMessage">
+    <strong>Message Sent!</strong> Thanks for completing the form. We'll be in touch soon!
+  </div>
+  <form id="contactForm">
+    <h2>Contact Us</h2>
+    <!-- Name -->
+    <div class="input-wrapper">
+      <label>
+        <span class="mandatory">First Name:</span>
+        <input type="text" name="fname" required>
+      </label>
+      <label>
+        <span class="mandatory">Last Name:</span>
+        <input type="text" name="lname" required>
+      </label>
+    </div>
+    <!-- Name -->
+
+    <label>
+      <span class="mandatory">Email Address:</span>
+      <input type="email" name="email" required>
+    </label>
+
+    <!-- Query Type -->
+    <label class="mandatory">Query Type:</label>
+    <div class="query-wrapper">
+      <label for="ge">
+        <input type="radio" id="ge" name="query_type" value="General Enquiry" required>
+        <p>General Enquiry</p>
+      </label>
+      <label for="sr">
+        <input type="radio" id="sr" name="query_type" value="Support Request" required>
+        <p>Support Request</p>
+      </label>
+    </div>
+    <!-- Query Type -->
+
+    <label for="Message" class="mandatory">Message:</label>
+    <textarea id="Message" name="Message" rows="4" required></textarea>
+
+    <div class="consent-wrapper">
+      <input type="checkbox" id="consent" name="consent" value="consent" required>
+      <label for="consent" class="mandatory">I consent to being contacted by the team</label>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      console.log({event})
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+      const successMessage = document.getElementById('successMessage');
+      successMessage.classList.add('show');
+
+      setTimeout(function () {
+        successMessage.classList.remove('show');
+      }, 5000); // Hide the message after 5 seconds
+
+      // Optionally, you can send the form data via AJAX here
+    });
+  </script>
+</body>
+
+</html>

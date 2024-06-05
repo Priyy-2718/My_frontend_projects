@@ -1,0 +1,216 @@
+HTML: hyper text markup language for creating web pages
+<!DOCTYPE html> The HTML document itself begins with <html> and ends with </html>.
+
+The visible part of the HTML document is between <body> and </body>.
+
+#The <!DOCTYPE> Declaration:
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+#HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+<h1> defines the most important heading. <h6> defines the least important heading: 
+
+#HTML Paragraphs
+HTML paragraphs are defined with the <p> tag:
+
+#HTML links are defined with the <a> tag: <a href="https://www.w3schools.com">This is a link</a>
+The link's destination is specified in the href attribute. 
+
+#HTML Images
+HTML images are defined with the <img> tag.
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+#The <br> tag defines a line break, and is an empty element without a closing tag:
+
+#The src Attribute
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed
+There are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+Attributes list in HTML:
+1. Lang
+2. img
+3. src
+4. style
+5. alt
+6. width and height
+7. href
+8. title
+
+Description:
+All HTML elements can have attributes
+The href attribute of <a> specifies the URL of the page the link goes to
+The src attribute of <img> specifies the path to the image to be displayed
+The width and height attributes of <img> provide size information for images
+The alt attribute of <img> provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the <html> tag declares the language of the Web page
+The title attribute defines some extra information about an element
+
+
+Tag:
+1. <p>
+2. <hr>:The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+3. <br>
+4. <pre>	Defines pre-formatted text
+
+#style
+1. Use the style attribute for styling HTML elements
+2. Use background-color for background color
+3. Use color for text colors
+4. Use font-family for text fonts
+5. Use font-size for text sizes
+6. Use text-align for text alignmen
+
+HTML Formatting Elements
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript tex
+
+HTML Quotation and Citation Elements
+Tag	Description
+<abbr>	Defines an abbreviation or acronym
+<address>	Defines contact information for the author/owner of a document
+<bdo>	Defines the text direction
+<blockquote>	Defines a section that is quoted from another source
+<cite>	Defines the title of a work
+<q>	Defines a short inline quotation
+
+rgb(red, green, blue)
+Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+
+rgba(red, green, blue, alpha)
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+HEX Color Values(In HTML, a color can be specified using a hexadecimal value in the form:)
+#rrggbb
+
+HSL stands for hue, saturation, and lightness.
+
+The CSS padding property defines a padding (space) between the text and the border.
+The CSS margin property defines a margin (space) outside the border.
+
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+Table Cells
+Each table cell is defined by a <td> and a </td> tag.
+
+Each table row starts with a <tr> and ends with a </tr> tag.
+
+Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+
+Tag	Description
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+
+
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <li> element to define a list item
+Lists can be nested
+List items can contain other HTML elements
+Use the CSS property float:left to display a list horizontally
+
+HTML List Tags
+Tag	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+The <div> element is used as a container for other HTML elements.
+The <div> element has no required attributes, but style, class and id are common.
+
+
+The HTML id attribute is used to specify a unique id for an HTML element.
+
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:
+
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+
+The <input type="text"> defines a single-line input field for text input.
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+The <label> tag defines a label for many form elements.
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
